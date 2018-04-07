@@ -7,9 +7,9 @@ ViewController with four hidden which can be called via gestures
 
 ## Features
 
-- SubViews on four directions had been pre-installed, call delegate and enable swipe gesture to enable them.
+- SubViews on four directions were pre-installed, set delegate and enable swipe gestures to enable them.
 
-- Subview was UIView by default, enabled custom UIControl
+- Subview was UIView by default, custom UIControl supported, 
 
 ## Requirements
 
