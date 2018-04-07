@@ -49,7 +49,7 @@ open class GestureViewController: UIViewController, GestureViewControllerDelegat
     }
     
     
-    // Enable hidden views based on your business logic.
+    // Enable hidden views based on your app's business logic.
     open func enableTopHiddenView() {
         topHiddenView = UIView(frame: CGRect(x: 0, y: 0, width: kScreenWith, height: 0))
         view.addSubview(topHiddenView!)
@@ -73,7 +73,7 @@ open class GestureViewController: UIViewController, GestureViewControllerDelegat
     
     /*
         Business logic when hidden views show up or hide.
-        Remember to call `super` at the beginning when you override these methods.
+        Remember to call `super` at the beginning when overriding these methods.
     */
     open func topHiddenViewShowsUp() {
         guard let _ = topHiddenView else { return }

@@ -107,7 +107,7 @@ public class GestureView: UIView {
     
     
     /*
-         If swipe gesture not enabled or horizontal hiddenViews are under displaying then do nothing.
+         If swipe gesture is not enabled or horizontal hiddenViews are under displaying then do nothing.
          If top hiddenView is under displaying then hide the top hiddenView.
          Not the case above then show the bottom hiddenView.
     */
@@ -123,7 +123,7 @@ public class GestureView: UIView {
     }
     
     /*
-         If swipe gesture not enabled or horizontal hiddenViews are under displaying then do nothing.
+         If swipe gesture is not enabled or horizontal hiddenViews are under displaying then do nothing.
          If bottom hiddenView is under displaying then hide the bottom hiddenView.
          Not the case above then show the top hiddenView.
     */
@@ -140,7 +140,7 @@ public class GestureView: UIView {
     }
     
     /*
-         If swipe gesture not enabled or vertical hiddenViews are under displaying then do nothing.
+         If swipe gesture is not enabled or vertical hiddenViews are under displaying then do nothing.
          If left hiddenView is under displaying then hide the left hiddenView.
          Not the case above then show the right hiddenView.
     */
@@ -156,7 +156,7 @@ public class GestureView: UIView {
     }
     
     /*
-         If swipe gesture not enabled or vertical hiddenViews are under displaying then do nothing.
+         If swipe gesture is not enabled or vertical hiddenViews are under displaying then do nothing.
          If right hiddenView is under displaying then hide the right hiddenView.
          Not the case above then show the left hiddenView.
     */
