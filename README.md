@@ -13,7 +13,7 @@ ViewController with four hidden which can be called via gestures
 
 ## Requirements
 
-Xcode9, Swift 4
+- Xcode9, Swift 4
 
 ## Installation
 
