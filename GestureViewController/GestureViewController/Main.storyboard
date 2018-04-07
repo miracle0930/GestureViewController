@@ -1,45 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7nj-My-2gN">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
-    <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
-    </dependencies>
-    <scenes>
-        <!--View Controller-->
-        <scene sceneID="w9t-Ye-JOd">
-            <objects>
-                <viewController id="7nj-My-2gN" customClass="ViewController" customModule="GestureViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="bPe-Mc-47E">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="6uu-xb-rrB">
-                                <rect key="frame" x="74" y="151" width="226" height="364"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="364" id="EcA-Fx-hxi"/>
-                                    <constraint firstAttribute="width" constant="226" id="GY4-18-M8m"/>
-                                </constraints>
-                                <string key="text">GestureViewController  -Up swipe to show bottom view or hide top view.  -Down swipe to show top view or hide bottom view.  -Left swipe to show right view or hide left view.  -Right swipe to show left view or hide right view. </string>
-                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="6uu-xb-rrB" firstAttribute="centerY" secondItem="bPe-Mc-47E" secondAttribute="centerY" id="AkX-XC-OzT"/>
-                            <constraint firstItem="6uu-xb-rrB" firstAttribute="centerX" secondItem="bPe-Mc-47E" secondAttribute="centerX" id="dHd-u0-Maq"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="AVl-HV-cQi"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="weS-Gt-gU9" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-370.39999999999998" y="-15.742128935532236"/>
-        </scene>
-    </scenes>
-</document>
