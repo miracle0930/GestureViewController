@@ -26,9 +26,9 @@ pod 'GestureViewController', :git => 'https://github.com/miracle0930/GestureView
 ```swift
 import GestureViewController
 ```
-- Initial `gestureView` in your `viewDidLoac()`method
+- Initial `gestureView` in your `viewDidLoad()`method
 ```swift
-import GestureViewControllrt
+import GestureViewController
 
 class ViewController: GestureViewController {
 
@@ -37,12 +37,13 @@ class ViewController: GestureViewController {
         // set gestureView's delegate to self
         gestureView.delegate = self
         // enable hiddenViews based on your app's business logic, and also enable swipe gesture. 
-        gestureView.enableUpSwipeGesture(true)
         enableTopHiddenView()
+        gestureView.enableUpSwipeGesture(true)
+        gestureView.enableDownSwipeGesture(true)
     }
     
     override func topHiddenViewShowsUp() {
-        // remember to call `super` when you override `showsUp` and `hides` methods
+        // remember to call `super` when overriding `showsUp` and `hides` methods
         super.topHiddenViewShowsUp()
         /*
             your business logic....
