@@ -89,8 +89,6 @@ public class GestureView: UIView {
         }
     }
     
-    
-    
     final func upSwipeGestureHandler(_ delegate: GestureViewControllerDelegate) {
         if (!upSwipeGestureEnabled && !downSwipeGestureEnabled) || leftHiddenViewIsDisplaying || rightHiddenViewIsDisplaying {
             return
