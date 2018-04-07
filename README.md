@@ -50,7 +50,7 @@ class ViewController: GestureViewController {
         */
     }
     
-    override func topHiddenViewHides {
+    override func topHiddenViewHides() {
         super.tohiddenViewHides()
         /*
             your business logic....
