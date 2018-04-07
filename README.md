@@ -20,6 +20,37 @@ ViewController with four hidden which can be called via gestures
 ```ruby
 pod 'GestureViewController', :git => 'https://github.com/miracle0930/GestureViewController.git'
 ```
+## Usage
+
+- import framework
+```swift
+import GestureViewController
+```
+- Initial `gestureView` in your `viewDidLoac()`method
+```swift
+import GestureViewControllrt
+
+class ViewController: GestureViewController {
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // set gestureView's delegate to self
+        gestureView.delegate = self
+        // enable hiddenViews based on your app's business logic, and also enable swipe gesture. 
+        gestureView.enableUpSwipeGesture(true)
+        enableTopHiddenView()
+    }
+    
+    override func topHiddenViewShowsUp() {
+        // remember to call `super` when you override `showsUp` and `hides` methods
+        super.topHiddenViewShowsUp()
+        /*
+            your business logic....
+        */
+    }
+}
+```
+
 ## Author
 Hao Guan, guanhao0930@gmail.com
 
