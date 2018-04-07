@@ -3,6 +3,7 @@ ViewController with four hidden which can be called via gestures
 
 ## Animation
 
+<p align = "center" src = "https://github.com/miracle0930/GestureViewController/blob/master/Screenshots/GestureViewControllerDemo.gif" /></p>
 
 ## Features
 
