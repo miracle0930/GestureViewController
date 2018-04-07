@@ -13,15 +13,19 @@ public class GestureView: UIView {
     
     public weak var delegate: GestureViewControllerDelegate?
     
+    // --- Detect swipe gestures are enabled ---
     var upSwipeGestureEnabled = false
     var downSwipeGestureEnabled = false
     var leftSwipeGestureEnabled = false
     var rightSwipeGestureEnabled = false
+    // ------------------------------------------
     
+    // --- Detect whether hidden view is under displaying ---
     var topHiddenViewIsDisplaying = false
     var bottomHiddenViewIsDisplaying = false
     var leftHiddenViewIsDisplaying = false
     var rightHiddenViewIsDisplaying = false
+    // ------------------------------------------------------
     
     lazy var upSwipeGesture: UISwipeGestureRecognizer = {
         let gesture = UISwipeGestureRecognizer(target: self, action: #selector(swipeGestureDetected))
@@ -46,7 +50,7 @@ public class GestureView: UIView {
         gesture.direction = .right
         return gesture
     }()
-
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
     }
@@ -79,6 +83,7 @@ public class GestureView: UIView {
         }
     }
     
+    // Handle swipe gestures under different cases.
     @objc final func swipeGestureDetected(gesture: UISwipeGestureRecognizer) {
         guard let delegate = self.delegate else {
             return
@@ -101,7 +106,11 @@ public class GestureView: UIView {
     }
     
     
-    
+    /*
+         If swipe gesture not enabled or horizontal hiddenViews are under displaying then do nothing.
+         If top hiddenView is under displaying then hide the top hiddenView.
+         Not the case above then show the bottom hiddenView.
+    */
     final func upSwipeGestureHandler(_ delegate: GestureViewControllerDelegate) {
         if (!upSwipeGestureEnabled && !downSwipeGestureEnabled) || leftHiddenViewIsDisplaying || rightHiddenViewIsDisplaying {
             return
@@ -113,6 +122,11 @@ public class GestureView: UIView {
         }
     }
     
+    /*
+         If swipe gesture not enabled or horizontal hiddenViews are under displaying then do nothing.
+         If bottom hiddenView is under displaying then hide the bottom hiddenView.
+         Not the case above then show the top hiddenView.
+    */
     final func downSwipeGestureHandler(_ delegate: GestureViewControllerDelegate) {
         if (!upSwipeGestureEnabled && !downSwipeGestureEnabled) || leftHiddenViewIsDisplaying || rightHiddenViewIsDisplaying {
             return
@@ -125,6 +139,11 @@ public class GestureView: UIView {
 
     }
     
+    /*
+         If swipe gesture not enabled or vertical hiddenViews are under displaying then do nothing.
+         If left hiddenView is under displaying then hide the left hiddenView.
+         Not the case above then show the right hiddenView.
+    */
     final func leftSwipeGestureHandler(_ delegate: GestureViewControllerDelegate) {
         if (!leftSwipeGestureEnabled && !rightSwipeGestureEnabled) || topHiddenViewIsDisplaying || bottomHiddenViewIsDisplaying {
             return
@@ -136,6 +155,11 @@ public class GestureView: UIView {
         }
     }
     
+    /*
+         If swipe gesture not enabled or vertical hiddenViews are under displaying then do nothing.
+         If right hiddenView is under displaying then hide the right hiddenView.
+         Not the case above then show the left hiddenView.
+    */
     final func rightSwipeGestureHandler(_ delegate: GestureViewControllerDelegate) {
         if (!leftSwipeGestureEnabled && !rightSwipeGestureEnabled) || topHiddenViewIsDisplaying || bottomHiddenViewIsDisplaying {
             return
