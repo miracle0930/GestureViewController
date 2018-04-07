@@ -49,6 +49,13 @@ class ViewController: GestureViewController {
             your business logic....
         */
     }
+    
+    override func topHiddenViewHides {
+        super.tohiddenViewHides()
+        /*
+            your business logic....
+        */
+    }
 }
 ```
 
