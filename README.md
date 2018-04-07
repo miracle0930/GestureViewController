@@ -26,7 +26,7 @@ pod 'GestureViewController', :git => 'https://github.com/miracle0930/GestureView
 ```swift
 import GestureViewController
 ```
-- Initial `gestureView` in your `viewDidLoad()`method
+- Initialize `gestureView` in your `viewDidLoad()`method
 ```swift
 import GestureViewController
 
