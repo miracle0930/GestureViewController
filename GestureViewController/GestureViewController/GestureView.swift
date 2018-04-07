@@ -23,18 +23,23 @@ public class GestureView: UIView {
     var leftHiddenViewIsDisplaying = false
     var rightHiddenViewIsDisplaying = false
     
-    var upSwipeGesture: UISwipeGestureRecognizer!
+    lazy var upSwipeGesture: UISwipeGestureRecognizer = {
+        let gesture = UISwipeGestureRecognizer(target: self, action: #selector(swipeGestureDetected))
+        gesture.direction = .up
+        return gesture
+    }()
+    
     var downSwipeGesture: UISwipeGestureRecognizer!
     var leftSwipeGesture: UISwipeGestureRecognizer!
     var rightSwipeGesture: UISwipeGestureRecognizer!
 
     override init(frame: CGRect) {
         super.init(frame: frame)
-        upSwipeGesture = UISwipeGestureRecognizer(target: self, action: #selector(swipeGestureDetected))
+//        upSwipeGesture = UISwipeGestureRecognizer(target: self, action: #selector(swipeGestureDetected))
         downSwipeGesture = UISwipeGestureRecognizer(target: self, action: #selector(swipeGestureDetected))
         leftSwipeGesture = UISwipeGestureRecognizer(target: self, action: #selector(swipeGestureDetected))
         rightSwipeGesture = UISwipeGestureRecognizer(target: self, action: #selector(swipeGestureDetected))
-        upSwipeGesture.direction = .up
+//        upSwipeGesture.direction = .up
         downSwipeGesture.direction = .down
         leftSwipeGesture.direction = .left
         rightSwipeGesture.direction = .right
