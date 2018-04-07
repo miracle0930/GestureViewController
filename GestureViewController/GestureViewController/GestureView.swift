@@ -9,9 +9,9 @@
 import Foundation
 import UIKit
 
-class GestureView: UIView {
+public class GestureView: UIView {
     
-    weak var delegate: GestureViewControllerDelegate?
+    public weak var delegate: GestureViewControllerDelegate?
     
     var upSwipeGestureEnabled = false
     var downSwipeGestureEnabled = false
@@ -40,29 +40,29 @@ class GestureView: UIView {
         rightSwipeGesture.direction = .right
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func enableUpSwipeGesture(_ bool: Bool) {
+    public func enableUpSwipeGesture(_ bool: Bool) {
         if bool {
             self.addGestureRecognizer(upSwipeGesture)
         }
     }
     
-    func enableDownSwipeGesture(_ bool: Bool) {
+    public func enableDownSwipeGesture(_ bool: Bool) {
         if bool {
             self.addGestureRecognizer(downSwipeGesture)
         }
     }
     
-    func enableLeftSwipeGesture(_ bool: Bool) {
+    public func enableLeftSwipeGesture(_ bool: Bool) {
         if bool {
             self.addGestureRecognizer(leftSwipeGesture)
         }
     }
     
-    func enableRightSwipeGesture(_ bool: Bool) {
+    public func enableRightSwipeGesture(_ bool: Bool) {
         if bool {
             self.addGestureRecognizer(rightSwipeGesture)
         }

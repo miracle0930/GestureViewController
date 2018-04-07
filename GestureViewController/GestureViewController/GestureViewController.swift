@@ -11,100 +11,100 @@ import UIKit
 let kScreenWith = UIScreen.main.bounds.width
 let kScreenHeight = UIScreen.main.bounds.height
 
-public class GestureViewController: UIViewController, GestureViewControllerDelegate {
+open class GestureViewController: UIViewController, GestureViewControllerDelegate {
     
-    var gestureView = GestureView(frame: CGRect(x: 0, y: 0, width: kScreenWith, height: kScreenHeight))
+    public var gestureView = GestureView(frame: CGRect(x: 0, y: 0, width: kScreenWith, height: kScreenHeight))
     
-    var topHiddenView: UIView? {
+    public var topHiddenView: UIView? {
         didSet {
             self.gestureView.upSwipeGestureEnabled = true
             self.gestureView.downSwipeGestureEnabled = true
         }
     }
     
-    var bottomHiddenView: UIView? {
+    public var bottomHiddenView: UIView? {
         didSet {
             self.gestureView.upSwipeGestureEnabled = true
             self.gestureView.downSwipeGestureEnabled = true
         }
     }
     
-    var leftHiddenView: UIView? {
+    public var leftHiddenView: UIView? {
         didSet {
             self.gestureView.leftSwipeGestureEnabled = true
             self.gestureView.rightSwipeGestureEnabled = true
         }
     }
     
-    var rightHiddenView: UIView? {
+    public var rightHiddenView: UIView? {
         didSet {
             self.gestureView.leftSwipeGestureEnabled = true
             self.gestureView.rightSwipeGestureEnabled = true
         }
     }
     
-    override public func viewDidLoad() {
+    override open func viewDidLoad() {
         super.viewDidLoad()
         view.addSubview(gestureView)
     }
     
-    public func enableTopHiddenView() {
+    open func enableTopHiddenView() {
         topHiddenView = UIView(frame: CGRect(x: 0, y: 0, width: kScreenWith, height: 0))
         view.addSubview(topHiddenView!)
     }
     
-    public func enableBottomhHiddenView() {
+    open func enableBottomhHiddenView() {
         bottomHiddenView = UIView(frame: CGRect(x: 0, y: kScreenHeight, width: kScreenWith, height: 0))
         view.addSubview(bottomHiddenView!)
     }
     
-    public func enableLeftHiddenView() {
+    open func enableLeftHiddenView() {
         leftHiddenView = UIView(frame: CGRect(x: 0, y: 0, width: 0, height: kScreenHeight))
         view.addSubview(leftHiddenView!)
     }
     
-    public func enableRightHiddenView() {
+    open func enableRightHiddenView() {
         rightHiddenView = UIView(frame: CGRect(x: kScreenWith, y: 0, width: 0, height: kScreenHeight))
         view.addSubview(rightHiddenView!)
     }
     
-    public func topHiddenViewShowsUp() {
+    open func topHiddenViewShowsUp() {
         guard let _ = topHiddenView else { return }
         gestureView.topHiddenViewIsDisplaying = true
     }
     
-    public func topHiddenViewHides() {
+    open func topHiddenViewHides() {
         guard let _ = topHiddenView else { return }
         gestureView.topHiddenViewIsDisplaying = false
 
     }
     
-    public func bottomHiddenViewShowsUp() {
+    open func bottomHiddenViewShowsUp() {
         guard let _ = bottomHiddenView else { return }
         gestureView.bottomHiddenViewIsDisplaying = true
     }
     
-    public func bottomHiddenViewHides() {
+    open func bottomHiddenViewHides() {
         guard let _ = bottomHiddenView else { return }
         gestureView.bottomHiddenViewIsDisplaying = false
     }
     
-    public func leftHiddenViewShowsUp() {
+    open func leftHiddenViewShowsUp() {
         guard let _ = leftHiddenView else { return }
         gestureView.leftHiddenViewIsDisplaying = true
     }
     
-    public func leftHiddenViewHides() {
+    open func leftHiddenViewHides() {
         guard let _ = leftHiddenView else { return }
         gestureView.leftHiddenViewIsDisplaying = false
     }
     
-    public func rightHiddenViewShowsUp() {
+    open func rightHiddenViewShowsUp() {
         guard let _ = rightHiddenView else { return }
         gestureView.rightHiddenViewIsDisplaying = true
     }
     
-    public func rightHiddenViewHides() {
+    open func rightHiddenViewHides() {
         guard let _ = rightHiddenView else { return }
         gestureView.rightHiddenViewIsDisplaying = false
     }
