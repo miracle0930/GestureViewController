@@ -3,7 +3,7 @@ platform :ios, '9.0'
 target 'testMyFrameWork' do
   use_frameworks!
 
-  pod 'GestureViewController', :git => 'https://github.com/miracle0930/GestureViewController.git'
+pod 'GestureViewController', :path => '..'
 
 
 end

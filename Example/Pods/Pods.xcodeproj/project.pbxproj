@@ -7,21 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0B813E53D338DC8A02C9F163FF7BAF33 /* project.pbxproj in Sources */ = {isa = PBXBuildFile; fileRef = 171F2259F1AC7BA8FFCFD370984E2542 /* project.pbxproj */; };
-		2A0022E29BE11A1EB3869F83D642CC1A /* IDEWorkspaceChecks.plist in Sources */ = {isa = PBXBuildFile; fileRef = 25BC0527D363D53E17340F14E5B05E1F /* IDEWorkspaceChecks.plist */; };
-		300A4E5317F1EB889F2ECAAD27607EFE /* Podfile in Sources */ = {isa = PBXBuildFile; fileRef = E718E32F35DF943040048711114B78E9 /* Podfile */; };
-		44470BE15589696BA3F2D9FA5BC04911 /* GestureViewController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7DD7EC65E75BD7BAA1EF1782955383CB /* GestureViewController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		452382C07E2A9C8596E532C824BC2058 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		4F60F9ED488F826D4214170B678493DF /* Info.plist in Sources */ = {isa = PBXBuildFile; fileRef = 2902F2BB107D0E5AE4ED90517543F635 /* Info.plist */; };
-		56492D83E0643735FA2E20E5D5873DC5 /* contents.xcworkspacedata in Sources */ = {isa = PBXBuildFile; fileRef = BB4576A42757390A4A524A787DE98E10 /* contents.xcworkspacedata */; };
-		57A7937E475B04992DDD63ABDED97F0B /* GestureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211F6C589B4B5C717382BBBDFCD9F4A6 /* GestureViewController.swift */; };
-		5850918020FAF7DD851141E3DAE6C7B1 /* GestureViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A3F60B079AE3C75650E9A59AA2D249A /* GestureViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5B55F000ADE267C36DEB3CF3C17C7E76 /* GestureViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A06FD33C16EE6D7153790F792AB46F /* GestureViewController-dummy.m */; };
-		76FB0142BCA52453B7E97925D1589C5A /* GestureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0575D46797EF602AC3369CDBF6008164 /* GestureView.swift */; };
+		09B3BDF2CEAD307F515D9A0BDCE84FCE /* contents.xcworkspacedata in Sources */ = {isa = PBXBuildFile; fileRef = 9BEAF27C78CCDF0BA2F9B3C879E9A6CD /* contents.xcworkspacedata */; };
+		0BA3C6BDED18A60AA403BBFF9E02086B /* Podfile in Sources */ = {isa = PBXBuildFile; fileRef = CA256B819C8BE7D818D5FABAA9D105E1 /* Podfile */; };
+		29899967CC2392C3C7C0CCF2F1FAD550 /* IDEWorkspaceChecks.plist in Sources */ = {isa = PBXBuildFile; fileRef = 354DAA2D2B09E554FF7E35E78CEF6A30 /* IDEWorkspaceChecks.plist */; };
+		4CD9C05E02A8BFBE406836463C885962 /* GestureViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = FE2172F5EE7E1E175FF4B01DE447D483 /* GestureViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4DF8B3FBF544C5695E13D25288646DDD /* GestureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437F568B599281132F9AE1C25232446C /* GestureView.swift */; };
+		4E05BBC0D3617EFC9E6204593CFD5154 /* xcschememanagement.plist in Sources */ = {isa = PBXBuildFile; fileRef = 8E63A7C2C18E25EA75F51106438BF24E /* xcschememanagement.plist */; };
 		789F7F1B72BC831A377337FC210CBD85 /* Pods-testMyFrameWork-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E76A3B0ABE8E4401E012830E5A6DE242 /* Pods-testMyFrameWork-dummy.m */; };
+		7B1E3D66894D8A84AC0D254C7C89A6F9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		860D5B0D103125B12D1940E693D433A5 /* GestureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C4B6BEA7103C65B2D0ABAD58F0ABAE /* GestureViewController.swift */; };
+		8FD1CBD8AC93C8B83B8BCB18A1A2322A /* GestureViewController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 33ABDC3B2DFDF59D5D335CD58AEA5716 /* GestureViewController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		93ABDF0DDF6066C1A0E676EB06031A0B /* Info.plist in Sources */ = {isa = PBXBuildFile; fileRef = F023A3119E251B3F08C7A3E2F192A74C /* Info.plist */; };
 		99A75C6A8BAB7227433E4A0F9B3B42D0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		A0BE43D85DF738AA1A6989195BA2FFE2 /* project.pbxproj in Sources */ = {isa = PBXBuildFile; fileRef = 64CEED4DA4A39118702FD96264D560F3 /* project.pbxproj */; };
 		A885B859FDA76E7A8681C4240E59FA29 /* Pods-testMyFrameWork-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 530346E50FAE0115B85B77AB39C59180 /* Pods-testMyFrameWork-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E98E4A7B6516A3AC8066289F05260458 /* GestureViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA3168CF2BDAB0C117787F0F92C166B /* GestureViewControllerDelegate.swift */; };
+		CB5455A4374B292C37F9FE92B426A5F8 /* GestureViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE3DC54F0A7330575C1270BAFCA9C6F /* GestureViewControllerDelegate.swift */; };
+		CD2E674949511E64ACA3F7D74DAF4C67 /* UserInterfaceState.xcuserstate in Sources */ = {isa = PBXBuildFile; fileRef = 3397C2C60C28C459376F37C60AF0762E /* UserInterfaceState.xcuserstate */; };
+		E6CECBAC154F9532316183BD233A35BC /* GestureViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F9BF1F332002A59113646A422FCFB6C2 /* GestureViewController-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,41 +31,43 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = A74FD58BDDCADDAF842E4DAF43271DBF;
+			remoteGlobalIDString = B3FA19ED32A6C164AE76ACE9AB61FA6A;
 			remoteInfo = GestureViewController;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		011B4FC42AB17A2FECB5E709A65A8619 /* Pods-testMyFrameWork-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-testMyFrameWork-resources.sh"; sourceTree = "<group>"; };
-		0575D46797EF602AC3369CDBF6008164 /* GestureView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GestureView.swift; path = GestureViewController/GestureViewController/GestureView.swift; sourceTree = "<group>"; };
-		171F2259F1AC7BA8FFCFD370984E2542 /* project.pbxproj */ = {isa = PBXFileReference; includeInIndex = 1; name = project.pbxproj; path = GestureViewController/GestureViewController.xcodeproj/project.pbxproj; sourceTree = "<group>"; };
-		211F6C589B4B5C717382BBBDFCD9F4A6 /* GestureViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GestureViewController.swift; path = GestureViewController/GestureViewController/GestureViewController.swift; sourceTree = "<group>"; };
-		25BC0527D363D53E17340F14E5B05E1F /* IDEWorkspaceChecks.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = IDEWorkspaceChecks.plist; path = GestureViewController/GestureViewController.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist; sourceTree = "<group>"; };
-		2902F2BB107D0E5AE4ED90517543F635 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = GestureViewController/GestureViewController/Info.plist; sourceTree = "<group>"; };
+		06AC0683C0F235E4894FEEB0CE4DFEAA /* GestureViewController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = GestureViewController.modulemap; sourceTree = "<group>"; };
 		29D8A996967DC2A8B46F74EE359476AC /* Pods-testMyFrameWork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-testMyFrameWork.release.xcconfig"; sourceTree = "<group>"; };
-		3DA3168CF2BDAB0C117787F0F92C166B /* GestureViewControllerDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GestureViewControllerDelegate.swift; path = GestureViewController/GestureViewController/GestureViewControllerDelegate.swift; sourceTree = "<group>"; };
+		3397C2C60C28C459376F37C60AF0762E /* UserInterfaceState.xcuserstate */ = {isa = PBXFileReference; includeInIndex = 1; path = UserInterfaceState.xcuserstate; sourceTree = "<group>"; };
+		33ABDC3B2DFDF59D5D335CD58AEA5716 /* GestureViewController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GestureViewController-umbrella.h"; sourceTree = "<group>"; };
+		354DAA2D2B09E554FF7E35E78CEF6A30 /* IDEWorkspaceChecks.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = IDEWorkspaceChecks.plist; sourceTree = "<group>"; };
+		437F568B599281132F9AE1C25232446C /* GestureView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GestureView.swift; sourceTree = "<group>"; };
 		530346E50FAE0115B85B77AB39C59180 /* Pods-testMyFrameWork-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-testMyFrameWork-umbrella.h"; sourceTree = "<group>"; };
-		5A3F60B079AE3C75650E9A59AA2D249A /* GestureViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GestureViewController.h; path = GestureViewController/GestureViewController/GestureViewController.h; sourceTree = "<group>"; };
+		56530A97971809A8F8F42F567651A74B /* GestureViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GestureViewController.xcconfig; sourceTree = "<group>"; };
+		59B9FF69CA5A1E7FB04A3724C7FADD85 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6234727E6B4162035E8E6068FBC3DE56 /* Pods-testMyFrameWork-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-testMyFrameWork-frameworks.sh"; sourceTree = "<group>"; };
+		64CEED4DA4A39118702FD96264D560F3 /* project.pbxproj */ = {isa = PBXFileReference; includeInIndex = 1; path = project.pbxproj; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		6A789646EA5FFFB1EAA0BFFD235C059C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		73C0AD354FAD1F196E6CD5BD7B236DB3 /* Pods-testMyFrameWork-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-testMyFrameWork-acknowledgements.plist"; sourceTree = "<group>"; };
 		78359E9CDEF5E29695F5077C45774FDC /* Pods_testMyFrameWork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_testMyFrameWork.framework; path = "Pods-testMyFrameWork.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7DD7EC65E75BD7BAA1EF1782955383CB /* GestureViewController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GestureViewController-umbrella.h"; sourceTree = "<group>"; };
 		8BA050A799DBC1707A9F564ACF4FAEBB /* GestureViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GestureViewController.framework; path = GestureViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DE3DC54F0A7330575C1270BAFCA9C6F /* GestureViewControllerDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GestureViewControllerDelegate.swift; sourceTree = "<group>"; };
+		8E63A7C2C18E25EA75F51106438BF24E /* xcschememanagement.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = xcschememanagement.plist; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		94E32F87A8BA9AF5757A4289B1686510 /* GestureViewController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = GestureViewController.modulemap; sourceTree = "<group>"; };
 		960B3B703AD61E66CCCD6F78C421EDF8 /* Pods-testMyFrameWork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-testMyFrameWork.debug.xcconfig"; sourceTree = "<group>"; };
-		A765C32C1EE37E356E0987F238ABB32C /* GestureViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GestureViewController-prefix.pch"; sourceTree = "<group>"; };
-		BB4576A42757390A4A524A787DE98E10 /* contents.xcworkspacedata */ = {isa = PBXFileReference; includeInIndex = 1; name = contents.xcworkspacedata; path = GestureViewController/GestureViewController.xcodeproj/project.xcworkspace/contents.xcworkspacedata; sourceTree = "<group>"; };
+		96C4B6BEA7103C65B2D0ABAD58F0ABAE /* GestureViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GestureViewController.swift; sourceTree = "<group>"; };
+		9BEAF27C78CCDF0BA2F9B3C879E9A6CD /* contents.xcworkspacedata */ = {isa = PBXFileReference; includeInIndex = 1; path = contents.xcworkspacedata; sourceTree = "<group>"; };
+		CA256B819C8BE7D818D5FABAA9D105E1 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; name = Podfile; path = GestureViewController/Podfile; sourceTree = "<group>"; };
+		CD2A318CCAA95871296E101DDE43F099 /* GestureViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GestureViewController-prefix.pch"; sourceTree = "<group>"; };
 		D0D7C0DA09577C8E8F5D3C1764485E27 /* Pods-testMyFrameWork.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-testMyFrameWork.modulemap"; sourceTree = "<group>"; };
-		E718E32F35DF943040048711114B78E9 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; name = Podfile; path = GestureViewController/Podfile; sourceTree = "<group>"; };
 		E76A3B0ABE8E4401E012830E5A6DE242 /* Pods-testMyFrameWork-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-testMyFrameWork-dummy.m"; sourceTree = "<group>"; };
-		E9A06FD33C16EE6D7153790F792AB46F /* GestureViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GestureViewController-dummy.m"; sourceTree = "<group>"; };
-		F5968D6FEC69EDEF58E0FD2F1A22E572 /* GestureViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GestureViewController.xcconfig; sourceTree = "<group>"; };
+		F023A3119E251B3F08C7A3E2F192A74C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F687055B903BD760A540204EBE146AD4 /* Pods-testMyFrameWork-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-testMyFrameWork-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F9BF1F332002A59113646A422FCFB6C2 /* GestureViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GestureViewController-dummy.m"; sourceTree = "<group>"; };
 		FBABBD305D564FC73D888761FD2188EA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE2172F5EE7E1E175FF4B01DE447D483 /* GestureViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GestureViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,17 +79,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BC126B4BCB8BD11FB9949055DBC79677 /* Frameworks */ = {
+		B606F2EF55F7FEB83D691DE075B78BE4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				452382C07E2A9C8596E532C824BC2058 /* Foundation.framework in Frameworks */,
+				7B1E3D66894D8A84AC0D254C7C89A6F9 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		11174164CACA3D69B6A3135A1F638B0C /* project.xcworkspace */ = {
+			isa = PBXGroup;
+			children = (
+				9BEAF27C78CCDF0BA2F9B3C879E9A6CD /* contents.xcworkspacedata */,
+				7F4922F8B92A071918C868A077391C78 /* xcshareddata */,
+				EDAEE565C4E039528A2D58D1F3270458 /* xcuserdata */,
+			);
+			name = project.xcworkspace;
+			path = project.xcworkspace;
+			sourceTree = "<group>";
+		};
 		274ED7F2EC3D19170C88CD3CB3BDF0AE /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -95,55 +110,65 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4B74DD149C41E959AE6485820076C779 /* GestureViewController */ = {
+		61B1A15C925F65EFFB713372DDA5334E /* guanhao.xcuserdatad */ = {
 			isa = PBXGroup;
 			children = (
-				BB4576A42757390A4A524A787DE98E10 /* contents.xcworkspacedata */,
-				0575D46797EF602AC3369CDBF6008164 /* GestureView.swift */,
-				5A3F60B079AE3C75650E9A59AA2D249A /* GestureViewController.h */,
-				211F6C589B4B5C717382BBBDFCD9F4A6 /* GestureViewController.swift */,
-				3DA3168CF2BDAB0C117787F0F92C166B /* GestureViewControllerDelegate.swift */,
-				25BC0527D363D53E17340F14E5B05E1F /* IDEWorkspaceChecks.plist */,
-				2902F2BB107D0E5AE4ED90517543F635 /* Info.plist */,
-				E718E32F35DF943040048711114B78E9 /* Podfile */,
-				171F2259F1AC7BA8FFCFD370984E2542 /* project.pbxproj */,
-				9A2EDD8B795E0C488553B73BD01E6170 /* Support Files */,
+				6A9D59BF38C0897D0764376981CD3A16 /* xcschemes */,
 			);
-			name = GestureViewController;
-			path = GestureViewController;
+			name = guanhao.xcuserdatad;
+			path = guanhao.xcuserdatad;
+			sourceTree = "<group>";
+		};
+		6A9D59BF38C0897D0764376981CD3A16 /* xcschemes */ = {
+			isa = PBXGroup;
+			children = (
+				8E63A7C2C18E25EA75F51106438BF24E /* xcschememanagement.plist */,
+			);
+			name = xcschemes;
+			path = xcschemes;
+			sourceTree = "<group>";
+		};
+		6C7D2CE0177AFA1BC99AA40D9C855365 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				06AC0683C0F235E4894FEEB0CE4DFEAA /* GestureViewController.modulemap */,
+				56530A97971809A8F8F42F567651A74B /* GestureViewController.xcconfig */,
+				F9BF1F332002A59113646A422FCFB6C2 /* GestureViewController-dummy.m */,
+				CD2A318CCAA95871296E101DDE43F099 /* GestureViewController-prefix.pch */,
+				33ABDC3B2DFDF59D5D335CD58AEA5716 /* GestureViewController-umbrella.h */,
+				59B9FF69CA5A1E7FB04A3724C7FADD85 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/GestureViewController";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				F6D2361A3BC613BC3C814FF18377DF14 /* Development Pods */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				8E07316CF42B93EFB5C77327038C02AA /* Pods */,
 				274ED7F2EC3D19170C88CD3CB3BDF0AE /* Products */,
 				9A70EDB7C4A4C7A5D2994E0915D58D8C /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		8E07316CF42B93EFB5C77327038C02AA /* Pods */ = {
+		7F4922F8B92A071918C868A077391C78 /* xcshareddata */ = {
 			isa = PBXGroup;
 			children = (
-				4B74DD149C41E959AE6485820076C779 /* GestureViewController */,
+				354DAA2D2B09E554FF7E35E78CEF6A30 /* IDEWorkspaceChecks.plist */,
 			);
-			name = Pods;
+			name = xcshareddata;
+			path = xcshareddata;
 			sourceTree = "<group>";
 		};
-		9A2EDD8B795E0C488553B73BD01E6170 /* Support Files */ = {
+		9A0599213D4ACD59B5E1298B452266C3 /* guanhao.xcuserdatad */ = {
 			isa = PBXGroup;
 			children = (
-				94E32F87A8BA9AF5757A4289B1686510 /* GestureViewController.modulemap */,
-				F5968D6FEC69EDEF58E0FD2F1A22E572 /* GestureViewController.xcconfig */,
-				E9A06FD33C16EE6D7153790F792AB46F /* GestureViewController-dummy.m */,
-				A765C32C1EE37E356E0987F238ABB32C /* GestureViewController-prefix.pch */,
-				7DD7EC65E75BD7BAA1EF1782955383CB /* GestureViewController-umbrella.h */,
-				6A789646EA5FFFB1EAA0BFFD235C059C /* Info.plist */,
+				3397C2C60C28C459376F37C60AF0762E /* UserInterfaceState.xcuserstate */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/GestureViewController";
+			name = guanhao.xcuserdatad;
+			path = guanhao.xcuserdatad;
 			sourceTree = "<group>";
 		};
 		9A70EDB7C4A4C7A5D2994E0915D58D8C /* Targets Support Files */ = {
@@ -152,6 +177,27 @@
 				CB6F34EEDFC3E1E02850DEA5FCAFE8BB /* Pods-testMyFrameWork */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		A02BD9994989B0E31488107FF17971B8 /* GestureViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CA256B819C8BE7D818D5FABAA9D105E1 /* Podfile */,
+				DFD364CFCAC8E9A0455D7EE63A769D8D /* GestureViewController */,
+				EB02B5DFEA70F93CA5FC3060A8B33BF0 /* GestureViewController.xcodeproj */,
+				6C7D2CE0177AFA1BC99AA40D9C855365 /* Support Files */,
+			);
+			name = GestureViewController;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		AEA28F141F08E39F6170FF61FAB861B1 /* xcuserdata */ = {
+			isa = PBXGroup;
+			children = (
+				61B1A15C925F65EFFB713372DDA5334E /* guanhao.xcuserdatad */,
+			);
+			name = xcuserdata;
+			path = xcuserdata;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -188,23 +234,64 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		DFD364CFCAC8E9A0455D7EE63A769D8D /* GestureViewController */ = {
+			isa = PBXGroup;
+			children = (
+				437F568B599281132F9AE1C25232446C /* GestureView.swift */,
+				FE2172F5EE7E1E175FF4B01DE447D483 /* GestureViewController.h */,
+				96C4B6BEA7103C65B2D0ABAD58F0ABAE /* GestureViewController.swift */,
+				8DE3DC54F0A7330575C1270BAFCA9C6F /* GestureViewControllerDelegate.swift */,
+				F023A3119E251B3F08C7A3E2F192A74C /* Info.plist */,
+			);
+			name = GestureViewController;
+			path = GestureViewController/GestureViewController;
+			sourceTree = "<group>";
+		};
+		EB02B5DFEA70F93CA5FC3060A8B33BF0 /* GestureViewController.xcodeproj */ = {
+			isa = PBXGroup;
+			children = (
+				64CEED4DA4A39118702FD96264D560F3 /* project.pbxproj */,
+				11174164CACA3D69B6A3135A1F638B0C /* project.xcworkspace */,
+				AEA28F141F08E39F6170FF61FAB861B1 /* xcuserdata */,
+			);
+			name = GestureViewController.xcodeproj;
+			path = GestureViewController/GestureViewController.xcodeproj;
+			sourceTree = "<group>";
+		};
+		EDAEE565C4E039528A2D58D1F3270458 /* xcuserdata */ = {
+			isa = PBXGroup;
+			children = (
+				9A0599213D4ACD59B5E1298B452266C3 /* guanhao.xcuserdatad */,
+			);
+			name = xcuserdata;
+			path = xcuserdata;
+			sourceTree = "<group>";
+		};
+		F6D2361A3BC613BC3C814FF18377DF14 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A02BD9994989B0E31488107FF17971B8 /* GestureViewController */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		41007EA22D8E20ECA91B9483E7EA9153 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FD1CBD8AC93C8B83B8BCB18A1A2322A /* GestureViewController-umbrella.h in Headers */,
+				4CD9C05E02A8BFBE406836463C885962 /* GestureViewController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		59FDC2B294314EBCC5D5DA3EBAA5C533 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				A885B859FDA76E7A8681C4240E59FA29 /* Pods-testMyFrameWork-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		98D10AA089804A32D1A5DA5DC7A51717 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				44470BE15589696BA3F2D9FA5BC04911 /* GestureViewController-umbrella.h in Headers */,
-				5850918020FAF7DD851141E3DAE6C7B1 /* GestureViewController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,13 +316,13 @@
 			productReference = 78359E9CDEF5E29695F5077C45774FDC /* Pods_testMyFrameWork.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		A74FD58BDDCADDAF842E4DAF43271DBF /* GestureViewController */ = {
+		B3FA19ED32A6C164AE76ACE9AB61FA6A /* GestureViewController */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 814AC98F0BBA7E03EBA8C7581879A32D /* Build configuration list for PBXNativeTarget "GestureViewController" */;
+			buildConfigurationList = 0E8E55FF7ABA2712C8FB4FA7B99C2863 /* Build configuration list for PBXNativeTarget "GestureViewController" */;
 			buildPhases = (
-				8B66DF9E333126DD341F9276AF4D711D /* Sources */,
-				BC126B4BCB8BD11FB9949055DBC79677 /* Frameworks */,
-				98D10AA089804A32D1A5DA5DC7A51717 /* Headers */,
+				BA8C9A7033411DC983441BCB3F623B3E /* Sources */,
+				B606F2EF55F7FEB83D691DE075B78BE4 /* Frameworks */,
+				41007EA22D8E20ECA91B9483E7EA9153 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -267,7 +354,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A74FD58BDDCADDAF842E4DAF43271DBF /* GestureViewController */,
+				B3FA19ED32A6C164AE76ACE9AB61FA6A /* GestureViewController */,
 				72EAABC26F26C05BE6E00AAD4F972C80 /* Pods-testMyFrameWork */,
 			);
 		};
@@ -282,19 +369,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8B66DF9E333126DD341F9276AF4D711D /* Sources */ = {
+		BA8C9A7033411DC983441BCB3F623B3E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				56492D83E0643735FA2E20E5D5873DC5 /* contents.xcworkspacedata in Sources */,
-				76FB0142BCA52453B7E97925D1589C5A /* GestureView.swift in Sources */,
-				5B55F000ADE267C36DEB3CF3C17C7E76 /* GestureViewController-dummy.m in Sources */,
-				57A7937E475B04992DDD63ABDED97F0B /* GestureViewController.swift in Sources */,
-				E98E4A7B6516A3AC8066289F05260458 /* GestureViewControllerDelegate.swift in Sources */,
-				2A0022E29BE11A1EB3869F83D642CC1A /* IDEWorkspaceChecks.plist in Sources */,
-				4F60F9ED488F826D4214170B678493DF /* Info.plist in Sources */,
-				300A4E5317F1EB889F2ECAAD27607EFE /* Podfile in Sources */,
-				0B813E53D338DC8A02C9F163FF7BAF33 /* project.pbxproj in Sources */,
+				09B3BDF2CEAD307F515D9A0BDCE84FCE /* contents.xcworkspacedata in Sources */,
+				4DF8B3FBF544C5695E13D25288646DDD /* GestureView.swift in Sources */,
+				E6CECBAC154F9532316183BD233A35BC /* GestureViewController-dummy.m in Sources */,
+				860D5B0D103125B12D1940E693D433A5 /* GestureViewController.swift in Sources */,
+				CB5455A4374B292C37F9FE92B426A5F8 /* GestureViewControllerDelegate.swift in Sources */,
+				29899967CC2392C3C7C0CCF2F1FAD550 /* IDEWorkspaceChecks.plist in Sources */,
+				93ABDF0DDF6066C1A0E676EB06031A0B /* Info.plist in Sources */,
+				0BA3C6BDED18A60AA403BBFF9E02086B /* Podfile in Sources */,
+				A0BE43D85DF738AA1A6989195BA2FFE2 /* project.pbxproj in Sources */,
+				CD2E674949511E64ACA3F7D74DAF4C67 /* UserInterfaceState.xcuserstate in Sources */,
+				4E05BBC0D3617EFC9E6204593CFD5154 /* xcschememanagement.plist in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,43 +393,12 @@
 		68499863BA3EE4F55095FF99CCD72E64 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = GestureViewController;
-			target = A74FD58BDDCADDAF842E4DAF43271DBF /* GestureViewController */;
+			target = B3FA19ED32A6C164AE76ACE9AB61FA6A /* GestureViewController */;
 			targetProxy = A8F3027DAF0C3D89684E42639801A8DB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		1FEF20AE0158E3C0EAB5EEB297EBC51C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F5968D6FEC69EDEF58E0FD2F1A22E572 /* GestureViewController.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/GestureViewController/GestureViewController-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/GestureViewController/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/GestureViewController/GestureViewController.modulemap";
-				PRODUCT_NAME = GestureViewController;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		26F954BA177A9A46FFFD4E23ED11D67A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -399,6 +457,38 @@
 			};
 			name = Release;
 		};
+		4135EBC3B36957B265311CBEF4C85640 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56530A97971809A8F8F42F567651A74B /* GestureViewController.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/GestureViewController/GestureViewController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GestureViewController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GestureViewController/GestureViewController.modulemap";
+				PRODUCT_NAME = GestureViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		4165A032457B2158F86E75F54ABCC098 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 29D8A996967DC2A8B46F74EE359476AC /* Pods-testMyFrameWork.release.xcconfig */;
@@ -432,6 +522,37 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		928E09A6E60213B5FC9CDF95C61619FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56530A97971809A8F8F42F567651A74B /* GestureViewController.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/GestureViewController/GestureViewController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GestureViewController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GestureViewController/GestureViewController.modulemap";
+				PRODUCT_NAME = GestureViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		BEA6FF29E99F43D495A98FFFF5A9213A /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -530,38 +651,6 @@
 			};
 			name = Debug;
 		};
-		EB5E0D489CA8F09496E5961E4A29DD05 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F5968D6FEC69EDEF58E0FD2F1A22E572 /* GestureViewController.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/GestureViewController/GestureViewController-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/GestureViewController/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/GestureViewController/GestureViewController.modulemap";
-				PRODUCT_NAME = GestureViewController;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -574,20 +663,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		0E8E55FF7ABA2712C8FB4FA7B99C2863 /* Build configuration list for PBXNativeTarget "GestureViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				928E09A6E60213B5FC9CDF95C61619FC /* Debug */,
+				4135EBC3B36957B265311CBEF4C85640 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E2BF6D6731C31DE69900B7B24E6F0445 /* Debug */,
 				26F954BA177A9A46FFFD4E23ED11D67A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		814AC98F0BBA7E03EBA8C7581879A32D /* Build configuration list for PBXNativeTarget "GestureViewController" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1FEF20AE0158E3C0EAB5EEB297EBC51C /* Debug */,
-				EB5E0D489CA8F09496E5961E4A29DD05 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

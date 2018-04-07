@@ -29,20 +29,26 @@ public class GestureView: UIView {
         return gesture
     }()
     
-    var downSwipeGesture: UISwipeGestureRecognizer!
-    var leftSwipeGesture: UISwipeGestureRecognizer!
-    var rightSwipeGesture: UISwipeGestureRecognizer!
+    lazy var downSwipeGesture: UISwipeGestureRecognizer = {
+        let gesture = UISwipeGestureRecognizer(target: self, action: #selector(swipeGestureDetected))
+        gesture.direction = .down
+        return gesture
+    }()
+    
+    lazy var leftSwipeGesture: UISwipeGestureRecognizer = {
+        let gesture = UISwipeGestureRecognizer(target: self, action: #selector(swipeGestureDetected))
+        gesture.direction = .left
+        return gesture
+    }()
+    
+    lazy var rightSwipeGesture: UISwipeGestureRecognizer = {
+        let gesture = UISwipeGestureRecognizer(target: self, action: #selector(swipeGestureDetected))
+        gesture.direction = .right
+        return gesture
+    }()
 
     override init(frame: CGRect) {
         super.init(frame: frame)
-//        upSwipeGesture = UISwipeGestureRecognizer(target: self, action: #selector(swipeGestureDetected))
-        downSwipeGesture = UISwipeGestureRecognizer(target: self, action: #selector(swipeGestureDetected))
-        leftSwipeGesture = UISwipeGestureRecognizer(target: self, action: #selector(swipeGestureDetected))
-        rightSwipeGesture = UISwipeGestureRecognizer(target: self, action: #selector(swipeGestureDetected))
-//        upSwipeGesture.direction = .up
-        downSwipeGesture.direction = .down
-        leftSwipeGesture.direction = .left
-        rightSwipeGesture.direction = .right
     }
     
     required public init?(coder aDecoder: NSCoder) {
