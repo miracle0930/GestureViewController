@@ -1,15 +1,9 @@
 # GestureViewController
-ViewController with four hidden which can be called via gestures
+ViewController with four direction pre-installed hidden views which could be called via swipe gestures.
 
 ## Animation
 
 <p align = "center"><img src = "https://github.com/miracle0930/GestureViewController/blob/master/Screenshots/GestureViewControllerDemo.gif" /></p>
-
-## Features
-
-- SubViews on four directions were pre-installed, set delegate and enable swipe gestures to enable them.
-
-- Subview was UIView by default, custom UIControl supported, 
 
 ## Requirements
 
@@ -43,8 +37,10 @@ class ViewController: GestureViewController {
     }
     
     override func topHiddenViewShowsUp() {
-        // remember to call `super` when overriding `showsUp` and `hides` methods
+        // remember to call `super` when overriding `showsUp` and `hides` methods.
         super.topHiddenViewShowsUp()
+        // commont out the next line to display shadow effect.
+        // hiddenViewWillShow(hiddenView: topHiddenView!)
         /*
             your business logic....
         */
@@ -55,12 +51,31 @@ class ViewController: GestureViewController {
         /*
             your business logic....
         */
+        // comment out the next line and put it into a completion handler to remove shadow effect.
+        // self.hiddenViewDidHide(hiddenView: self.topHiddenView!)
     }
 }
 ```
+- Override the `hiddenViewWillShow(hiddenView: UIView)` and `hiddenViewDidhide(hiddenView: UIView)` method to customize your shadow effect.
+```swift
+    open func hiddenViewWillShow(hiddenView: UIView, shadowOffset: CGSize = CGSize(width: 0, height: 0), shadowColor: CGColor = UIColor.gray.cgColor,
+                                 shadowRadius: CGFloat = 100, shadowOpacity: Float = 0.8) {
+        hiddenView.layer.shadowOffset = shadowOffset
+        hiddenView.layer.shadowColor = shadowColor
+        hiddenView.layer.shadowOpacity = shadowOpacity
+        hiddenView.layer.shadowRadius = shadowRadius
+    }
+    
+    open func hiddenViewDidHide(hiddenView: UIView) {
+        hiddenView.layer.shadowOffset = CGSize(width: 0, height: 0)
+        hiddenView.layer.shadowColor = UIColor.clear.cgColor
+        hiddenView.layer.shadowOpacity = 0.00;
+        hiddenView.layer.shadowRadius = 0
+    }
+```
 
-## Author
-Hao Guan, guanhao0930@gmail.com
+## Credits
+Maintained by [**miracle0930**], guanhao0930@gmail.com
 
 ## License
 

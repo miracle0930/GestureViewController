@@ -116,19 +116,19 @@ open class GestureViewController: UIViewController, GestureViewControllerDelegat
         gestureView.rightHiddenViewIsDisplaying = false
     }
     
-    open func hiddenViewDidHide(hiddenView: UIView) {
-        hiddenView.layer.shadowOffset = CGSize(width: 0, height: 0)
-        hiddenView.layer.shadowColor = UIColor.clear.cgColor
-        hiddenView.layer.shadowOpacity = 0.00;
-        hiddenView.layer.shadowRadius = 0
-    }
-    
     open func hiddenViewWillShow(hiddenView: UIView, shadowOffset: CGSize = CGSize(width: 0, height: 0), shadowColor: CGColor = UIColor.gray.cgColor,
                                  shadowRadius: CGFloat = 100, shadowOpacity: Float = 0.8) {
         hiddenView.layer.shadowOffset = shadowOffset
         hiddenView.layer.shadowColor = shadowColor
         hiddenView.layer.shadowOpacity = shadowOpacity
         hiddenView.layer.shadowRadius = shadowRadius
+    }
+    
+    open func hiddenViewDidHide(hiddenView: UIView) {
+        hiddenView.layer.shadowOffset = CGSize(width: 0, height: 0)
+        hiddenView.layer.shadowColor = UIColor.clear.cgColor
+        hiddenView.layer.shadowOpacity = 0.00;
+        hiddenView.layer.shadowRadius = 0
     }
     
 }
