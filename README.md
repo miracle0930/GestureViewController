@@ -30,8 +30,13 @@ class ViewController: GestureViewController {
         super.viewDidLoad()
         // set gestureView's delegate to self
         gestureView.delegate = self
+        
         // enable hiddenViews based on your app's business logic, and also enable swipe gesture. 
-        enableTopHiddenView()
+        topHiddenView = UIView(frame: CGRect(x: 0, y: -200, width: kScreenWith, height: 200))
+        topHiddenView!.backgroundColor = .blue
+        enableTopHiddenView(topHiddenView: topHiddenView!)
+        
+        // enable swipe gestures
         gestureView.enableUpSwipeGesture(true)
         gestureView.enableDownSwipeGesture(true)
     }
@@ -58,8 +63,8 @@ class ViewController: GestureViewController {
 ```
 - Override the `hiddenViewWillShow(hiddenView: UIView)` and `hiddenViewDidhide(hiddenView: UIView)` method to customize your shadow effect.
 ```swift
-    open func hiddenViewWillShow(hiddenView: UIView, shadowOffset: CGSize = CGSize(width: 0, height: 0), shadowColor: CGColor = UIColor.gray.cgColor,
-                                 shadowRadius: CGFloat = 100, shadowOpacity: Float = 0.8) {
+    open func hiddenViewWillShow(hiddenView: UIView, shadowOffset: CGSize = CGSize(width: 0, height: 0), 
+                                 shadowColor: CGColor = UIColor.gray.cgColor, shadowRadius: CGFloat = 100, shadowOpacity: Float = 0.8) {
         hiddenView.layer.shadowOffset = shadowOffset
         hiddenView.layer.shadowColor = shadowColor
         hiddenView.layer.shadowOpacity = shadowOpacity
@@ -75,7 +80,7 @@ class ViewController: GestureViewController {
 ```
 
 ## Credits
-Maintained by [**miracle0930**], guanhao0930@gmail.com
+Maintained by [**@miracle0930**], guanhao0930@gmail.com
 
 ## License
 
