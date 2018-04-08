@@ -25,6 +25,8 @@ import GestureViewController
 import GestureViewController
 
 class ViewController: GestureViewController {
+    
+    var topHiddenView: UIView?
 
     override func viewDidLoad() {
         super.viewDidLoad()
