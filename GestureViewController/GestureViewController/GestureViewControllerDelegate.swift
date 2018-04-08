@@ -10,20 +10,20 @@ import Foundation
 
 @objc public protocol GestureViewControllerDelegate: class {
     
-    @objc func topHiddenViewShowsUp()
+    @objc func topHiddenViewShowsUpBySwipe()
     
-    @objc func bottomHiddenViewShowsUp()
+    @objc func bottomHiddenViewShowsUpBySwipe()
     
-    @objc func leftHiddenViewShowsUp()
+    @objc func leftHiddenViewShowsUpBySwipe()
     
-    @objc func rightHiddenViewShowsUp()
+    @objc func rightHiddenViewShowsUpBySwipe()
     
-    @objc func topHiddenViewHides()
+    @objc func topHiddenViewHidesBySwipe()
     
-    @objc func bottomHiddenViewHides()
+    @objc func bottomHiddenViewHidesBySwipe()
     
-    @objc func leftHiddenViewHides()
+    @objc func leftHiddenViewHidesBySwipe()
     
-    @objc func rightHiddenViewHides()
-    
+    @objc func rightHiddenViewHidesBySwipe()
+        
 }

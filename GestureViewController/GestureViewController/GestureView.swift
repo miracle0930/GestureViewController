@@ -20,6 +20,7 @@ public class GestureView: UIView {
     var rightSwipeGestureEnabled = false
     // ------------------------------------------
     
+    
     // --- Detect whether hidden view is under displaying ---
     var topHiddenViewIsDisplaying = false
     var bottomHiddenViewIsDisplaying = false
@@ -50,6 +51,7 @@ public class GestureView: UIView {
         gesture.direction = .right
         return gesture
     }()
+    
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -83,11 +85,10 @@ public class GestureView: UIView {
         }
     }
     
+    
     // Handle swipe gestures under different cases.
     @objc final func swipeGestureDetected(gesture: UISwipeGestureRecognizer) {
-        guard let delegate = self.delegate else {
-            return
-        }
+        guard let delegate = self.delegate else { return }
         switch gesture.direction {
         case .up:
             upSwipeGestureHandler(delegate)
@@ -116,9 +117,9 @@ public class GestureView: UIView {
             return
         }
         if topHiddenViewIsDisplaying {
-            delegate.topHiddenViewHides()
+            delegate.topHiddenViewHidesBySwipe()
         } else if !bottomHiddenViewIsDisplaying {
-            delegate.bottomHiddenViewShowsUp()
+            delegate.bottomHiddenViewShowsUpBySwipe()
         }
     }
     
@@ -132,9 +133,9 @@ public class GestureView: UIView {
             return
         }
         if bottomHiddenViewIsDisplaying {
-            delegate.bottomHiddenViewHides()
+            delegate.bottomHiddenViewHidesBySwipe()
         } else if !topHiddenViewIsDisplaying {
-            delegate.topHiddenViewShowsUp()
+            delegate.topHiddenViewShowsUpBySwipe()
         }
 
     }
@@ -149,9 +150,9 @@ public class GestureView: UIView {
             return
         }
         if leftHiddenViewIsDisplaying {
-            delegate.leftHiddenViewHides()
+            delegate.leftHiddenViewHidesBySwipe()
         } else if !rightHiddenViewIsDisplaying {
-            delegate.rightHiddenViewShowsUp()
+            delegate.rightHiddenViewShowsUpBySwipe()
         }
     }
     
@@ -165,9 +166,9 @@ public class GestureView: UIView {
             return
         }
         if rightHiddenViewIsDisplaying {
-            delegate.rightHiddenViewHides()
+            delegate.rightHiddenViewHidesBySwipe()
         } else if !leftHiddenViewIsDisplaying {
-            delegate.leftHiddenViewShowsUp()
+            delegate.leftHiddenViewShowsUpBySwipe()
         }
     }
 }

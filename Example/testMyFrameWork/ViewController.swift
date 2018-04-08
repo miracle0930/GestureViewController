@@ -9,101 +9,109 @@
 import UIKit
 import GestureViewController
 
+let kScreenWith = UIScreen.main.bounds.width
+let kScreenHeight = UIScreen.main.bounds.height
 
 class ViewController: GestureViewController {
+    
+    var topHiddenView: UIView?
+    var bottomHiddenView: UIView?
+    var leftHiddenView: UIView?
+    var rightHiddenView: UIView?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        gestureView.backgroundColor = .clear
+        gestureView.backgroundColor = .white
         gestureView.delegate = self
+        
         gestureView.enableUpSwipeGesture(true)
         gestureView.enableDownSwipeGesture(true)
         gestureView.enableLeftSwipeGesture(true)
         gestureView.enableRightSwipeGesture(true)
-        enableTopHiddenView()
-        enableBottomhHiddenView()
-        enableLeftHiddenView()
-        enableRightHiddenView()
+        
+        topHiddenView = UIView(frame: CGRect(x: 0, y: -200, width: kScreenWith, height: 200))
         topHiddenView!.backgroundColor = .blue
+        enableTopHiddenView(topHiddenView: topHiddenView!)
+        
+        bottomHiddenView = UIView(frame: CGRect(x: 0, y: kScreenHeight, width: kScreenWith, height: 200))
         bottomHiddenView!.backgroundColor = .red
+        enableBottomhHiddenView(bottomHiddenView: bottomHiddenView!)
+        
+        leftHiddenView = UIView(frame: CGRect(x: -200, y: 0, width: 200, height: kScreenHeight))
         leftHiddenView!.backgroundColor = .green
+        enableLeftHiddenView(leftHiddenView: leftHiddenView!)
+        
+        rightHiddenView = UIView(frame: CGRect(x: kScreenWith, y: 0, width: 200, height: kScreenHeight))
         rightHiddenView!.backgroundColor = .brown
+        enableRightHiddenView(rightHiddenView: rightHiddenView!)
     }
     
-    override func topHiddenViewShowsUp() {
-        super.topHiddenViewShowsUp()
+    override func topHiddenViewShowsUpBySwipe() {
+        super.topHiddenViewShowsUpBySwipe()
+        hiddenViewWillShow(hiddenView: topHiddenView!)
         UIView.animate(withDuration: 0.3) {
-            self.topHiddenView!.frame.size.height = 200
-            self.gestureView.frame.size.height -= 200
-            self.gestureView.frame.origin.y += 200
-            self.gestureView.backgroundColor?.withAlphaComponent(0.5)
+            self.topHiddenView!.frame.origin.y += 200
         }
     }
     
-    override func topHiddenViewHides() {
-        super.topHiddenViewHides()
-        UIView.animate(withDuration: 0.3) {
-            self.topHiddenView!.frame.size.height = 0
-            self.gestureView.frame.size.height += 200
-            self.gestureView.frame.origin.y -= 200
+    override func topHiddenViewHidesBySwipe() {
+        super.topHiddenViewHidesBySwipe()
+        UIView.animate(withDuration: 0.3, animations: {
+            self.topHiddenView!.frame.origin.y -= 200
+        }) { (_) in
+            self.hiddenViewDidHide(hiddenView: self.topHiddenView!)
         }
     }
     
-    override func bottomHiddenViewShowsUp() {
-        super.bottomHiddenViewShowsUp()
+    override func bottomHiddenViewShowsUpBySwipe() {
+        super.bottomHiddenViewShowsUpBySwipe()
+        hiddenViewWillShow(hiddenView: bottomHiddenView!)
         UIView.animate(withDuration: 0.3) {
-            self.bottomHiddenView!.frame.size.height = 200
             self.bottomHiddenView!.frame.origin.y -= 200
-            self.gestureView.frame.size.height -= 200
         }
     }
     
-    override func bottomHiddenViewHides() {
-        super.bottomHiddenViewHides()
-        UIView.animate(withDuration: 0.3) {
-            self.bottomHiddenView!.frame.size.height = 0
+    override func bottomHiddenViewHidesBySwipe() {
+        super.bottomHiddenViewHidesBySwipe()
+        UIView.animate(withDuration: 0.3, animations: {
             self.bottomHiddenView!.frame.origin.y += 200
-            self.gestureView.frame.size.height += 200
+        }) { (_) in
+            self.hiddenViewDidHide(hiddenView: self.bottomHiddenView!)
         }
     }
     
-    override func leftHiddenViewShowsUp() {
-        super.leftHiddenViewShowsUp()
+    override func leftHiddenViewShowsUpBySwipe() {
+        super.leftHiddenViewShowsUpBySwipe()
+        hiddenViewWillShow(hiddenView: leftHiddenView!)
         UIView.animate(withDuration: 0.3) {
-            self.leftHiddenView!.frame.size.width = 200
-            self.gestureView.frame.size.width -= 200
-            self.gestureView.frame.origin.x += 200
+            self.leftHiddenView!.frame.origin.x += 200
         }
     }
     
-    override func leftHiddenViewHides() {
-        super.leftHiddenViewHides()
-        UIView.animate(withDuration: 0.3) {
-            self.leftHiddenView!.frame.size.width = 0
-            self.gestureView.frame.size.width += 200
-            self.gestureView.frame.origin.x -= 200
+    override func leftHiddenViewHidesBySwipe() {
+        super.leftHiddenViewHidesBySwipe()
+        UIView.animate(withDuration: 0.3, animations: {
+            self.leftHiddenView!.frame.origin.x -= 200
+        }) { (_) in
+            self.hiddenViewDidHide(hiddenView: self.leftHiddenView!)
         }
     }
     
-    override func rightHiddenViewShowsUp() {
-        super.rightHiddenViewShowsUp()
+    override func rightHiddenViewShowsUpBySwipe() {
+        super.rightHiddenViewShowsUpBySwipe()
+        hiddenViewWillShow(hiddenView: rightHiddenView!)
         UIView.animate(withDuration: 0.3) {
-            self.rightHiddenView!.frame.size.width = 200
             self.rightHiddenView!.frame.origin.x -= 200
-            self.gestureView.frame.size.width -= 200
         }
     }
     
-    override func rightHiddenViewHides() {
-        super.rightHiddenViewHides()
-        UIView.animate(withDuration: 0.3) {
-            self.rightHiddenView!.frame.size.width = 0
+    override func rightHiddenViewHidesBySwipe() {
+        super.rightHiddenViewHidesBySwipe()
+        UIView.animate(withDuration: 0.3, animations: {
             self.rightHiddenView!.frame.origin.x += 200
-            self.gestureView.frame.size.width += 200
+        }) { (_) in
+            self.hiddenViewDidHide(hiddenView: self.rightHiddenView!)
         }
     }
-
-
-
 }
 
