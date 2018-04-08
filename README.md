@@ -82,8 +82,8 @@ class ViewController: GestureViewController {
 ```
 
 ## Credits
-Maintained by [**@miracle0930**](https://twitter.com/Mirace0930), guanhao0930@gmail.com
+Maintained by [**@miracle0930**](https://twitter.com/Mirace0930)
 
 ## License
 
-GestureViewController is available under the MIT license. See the LICENSE file for more info.
+`GestureViewController` is available under the MIT license. See the LICENSE file for more info.
