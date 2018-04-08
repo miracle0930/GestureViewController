@@ -1,6 +1,0 @@
-framework module GestureViewController {
-  umbrella header "GestureViewController-umbrella.h"
-
-  export *
-  module * { export * }
-}
